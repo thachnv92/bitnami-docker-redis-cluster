@@ -4,6 +4,8 @@ services:
     image: docker.io/bitnami/redis-cluster:6.2
     volumes:
       - redis-cluster_data-0:/bitnami/redis/data
+    ports:
+      - 7000:6379
     environment:
       - 'REDIS_PASSWORD=bitnami'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5 redis-node-6 redis-node-7 redis-node-8'
@@ -12,6 +14,8 @@ services:
     image: docker.io/bitnami/redis-cluster:6.2
     volumes:
       - redis-cluster_data-1:/bitnami/redis/data
+    ports:
+      - 7001:6379
     environment:
       - 'REDIS_PASSWORD=bitnami'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5 redis-node-6 redis-node-7 redis-node-8'
@@ -20,6 +24,8 @@ services:
     image: docker.io/bitnami/redis-cluster:6.2
     volumes:
       - redis-cluster_data-2:/bitnami/redis/data
+    ports:
+      - 7002:6379
     environment:
       - 'REDIS_PASSWORD=bitnami'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5 redis-node-6 redis-node-7 redis-node-8'
@@ -28,6 +34,8 @@ services:
     image: docker.io/bitnami/redis-cluster:6.2
     volumes:
       - redis-cluster_data-3:/bitnami/redis/data
+    ports:
+      - 7003:6379
     environment:
       - 'REDIS_PASSWORD=bitnami'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5 redis-node-6 redis-node-7 redis-node-8'
@@ -36,6 +44,8 @@ services:
     image: docker.io/bitnami/redis-cluster:6.2
     volumes:
       - redis-cluster_data-4:/bitnami/redis/data
+    ports:
+      - 7004:6379
     environment:
       - 'REDIS_PASSWORD=bitnami'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5 redis-node-6 redis-node-7 redis-node-8'
@@ -44,6 +54,8 @@ services:
     image: docker.io/bitnami/redis-cluster:6.2
     volumes:
       - redis-cluster_data-5:/bitnami/redis/data
+    ports:
+      - 7005:6379
     environment:
       - 'REDIS_PASSWORD=bitnami'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5 redis-node-6 redis-node-7 redis-node-8'
@@ -52,6 +64,8 @@ services:
     image: docker.io/bitnami/redis-cluster:6.2
     volumes:
       - redis-cluster_data-6:/bitnami/redis/data
+    ports:
+      - 7006:6379
     environment:
       - 'REDIS_PASSWORD=bitnami'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5 redis-node-6 redis-node-7 redis-node-8'
@@ -60,6 +74,8 @@ services:
     image: docker.io/bitnami/redis-cluster:6.2
     volumes:
       - redis-cluster_data-7:/bitnami/redis/data
+    ports:
+      - 7007:6379
     environment:
       - 'REDIS_PASSWORD=bitnami'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5 redis-node-6 redis-node-7 redis-node-8'
@@ -68,6 +84,8 @@ services:
     image: docker.io/bitnami/redis-cluster:6.2
     volumes:
       - redis-cluster_data-8:/bitnami/redis/data
+    ports:
+      - 7008:6379
     depends_on:
       - redis-node-0
       - redis-node-1
